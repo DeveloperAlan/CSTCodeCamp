@@ -1,3 +1,20 @@
+Welcome to CST (Computer Science Tutor) open source codebase and cirriculum! The CST course is created to help primary and secondary school students in Australia and hopefully around the globe to learn computer science. This project is focused on web development such as JavaScript, HTML/CSS and a small chuck of jQuery.
+
+CST is a project maintained by Be Computers, a Sydney web development and computer specialisation company. Visit us at https://www.becomputers.com.au
+
+This project has been forked and retuned to our liking to follow the course guidelines of Think Table. Visit them at thinktable.com
+##CST Online Course##
+
+
+The project that we have from is from FreeCodeCamp. They have amazing courses on web development and what has inspired us to create this course. Visit them at freecodecamp.com
+
+Contributors that contribute directly to the CST course (not the FreeCodeCamp course) are listed below. Thank you for your contribution!
+
+Alan Ng @developeralan
+
+
+Below is the original README.md from FreeCodeCamp. Feel free to read it and visit their content.
+
 ![](https://s3.amazonaws.com/freecodecamp/wide-social-banner.png)
 
 [![Throughput Graph](https://graphs.waffle.io/freecodecamp/freecodecamp/throughput.svg)](https://waffle.io/freecodecamp/freecodecamp/metrics)
