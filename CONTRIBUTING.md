@@ -29,7 +29,7 @@ If you've found a bug that is not on the board, [follow these steps](#found-a-bu
 ### Contribution Guidelines
 
 1.  Fork the project: [How To Fork And Maintain a Local Instance of Free Code
-    Camp](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/FreeCodeCamp-Fork-Local)
+    Camp](http://forum.freecodecamp.com/t/how-to-fork-and-maintain-a-local-instance-of-free-code-camp/19116)
 
 2.  Create a branch specific to the issue or feature you are working on. Push
     your work to that branch. ([Need help with
@@ -47,10 +47,10 @@ If you've found a bug that is not on the board, [follow these steps](#found-a-bu
     run by using `npm run test-challenges`, as jsonlint will always fail on
     Windows, given the wildcard parameters.
 
-6.  Squash your Commits. Ref: [rebasing](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/git-rebase)
+6.  Squash your Commits. Ref: [rebasing](http://forum.freecodecamp.com/t/how-to-use-git-rebase/13226)
 
 7.  Submit a [pull
-    request](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Pull-Request-Contribute)
+    request](http://forum.freecodecamp.com/t/how-to-make-a-pull-request-on-free-code-camp/19114)
     from your branch to Free Code Camp's `staging` branch.  [Travis
     CI](https://travis-ci.org/FreeCodeCamp/FreeCodeCamp) will then take your
     code and run `npm test`.  Make sure this passes, then we'll do a quick code
@@ -107,13 +107,8 @@ Edit your `.env` file and modify the API keys only for services that you will
 use.
 
 Note : Not all keys are required, to run the app locally, however `MONGOHQ_URL`
-is the most important one.
-
-If you only use email login, in addition to `MONGOHQ_URL`, `SESSION_SECRET`, add
-the  `MANDRILL_USER` and `MANDRILL_PASSWORD` API Keys. Not setting these keys
-will throw an exception when you sign up which you can ignore, you will still be
-able to login, however you may get these keys
-[here](https://www.mandrill.com/signup/). Sign up and create a new pair of keys.
+is the most important one. Unless you have MongoDB running in a setup different
+than the defaults, the URL in the `sample.env` should work fine.
 
 You can leave the other keys as they are. Keep in mind if you want to use more
 services you'll have to get your own API keys for those services and edit those
@@ -142,7 +137,7 @@ issue and with your error.
 You should have [ESLint running in your
 editor](http://eslint.org/docs/user-guide/integrations.html), and it will
 highlight anything doesn't conform to [Free Code Camp's JavaScript Style
-Guide](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Free-Code-Camp-JavaScript-Style-Guide)
+Guide](http://forum.freecodecamp.com/t/free-code-camp-javascript-style-guide/19121)
 (you can find a summary of those rules
 [here](https://github.com/FreeCodeCamp/FreeCodeCamp/blob/staging/.eslintrc).
 Please do not ignore any linting errors, as they are meant to **help** you and
@@ -156,10 +151,10 @@ does not fully support wildcard paths in Windows.
 Do not file an issue until you have followed these steps:
 
 1.  Read [Help I've Found a
-    Bug](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/FreeCodeCamp-Report-Bugs)
+    Bug](http://forum.freecodecamp.com/t/how-to-report-a-bug/19543)
     wiki page and follow the instructions there.
 
-2.  Asked for confirmation in the appropriate [Help Room](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Help-Rooms)
+2.  Asked for confirmation in the appropriate [Help Room](http://forum.freecodecamp.com/t/free-code-camp-official-chat-rooms/19390/2)
 
 3.  Please _do not_ open an issue without a 3rd party confirmation of your
     problem.
@@ -178,12 +173,14 @@ accepted by Free Code Camp proper.
 Free Code Camp Issue Mods and staff are on hand to assist with Pull Request
 related issues on our Help Contributors Chat Room
 
-#### Methods
+#### How to find the code in the Free Code Camp codebase to fix/edit?
 
-There are two methods of creating a Pull for Free Code Camp:
-
--   Editing files via the GitHub Interface
--   Editing files on a local clone
+The best way to find out any code you wish to change/add or remove is using
+the GitHub search bar at the top of the repository page. For example, you could 
+search for a challenge name and the results will display all the files along 
+with line numbers. Then you can proceed to the files and verify this is the area
+that you were looking forward to edit. Always feel free to reach out to the chat
+room when you are not certain of any thing specific in the code.
 
 #### Important: ALWAYS EDIT ON A BRANCH
 
@@ -192,6 +189,13 @@ make edits to the `staging` branch. ALWAYS make a new branch BEFORE you edit
 files. This is critical, because if your PR is not accepted, your copy of
 staging will be forever sullied and the only way to fix it is to delete your
 fork and re-fork.
+
+#### Methods
+
+There are two methods of creating a pull request for Free Code Camp:
+
+-   Editing files via the GitHub Interface
+-   Editing files on a local clone
 
 ##### Method 1: Editing via your Local Fork _(Recommended)_
 
@@ -240,7 +244,7 @@ possible to update your fork via GitHub's interface without deleting and
 recreating your fork.
 
 Read the [Wiki
-article](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/How-To-Create-A-Pull-Request-for-Free-Code-Camp#editing-via-the-github-interface)
+article](http://forum.freecodecamp.com/t/how-to-make-a-pull-request-on-free-code-camp/19114)
 for further information
 
 ### Common Steps
@@ -252,7 +256,7 @@ for further information
     branch.
 
 3.  Submit a [pull
-    request](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Pull-Request-Contribute)
+    request](http://forum.freecodecamp.com/t/how-to-contribute-via-a-pull-request/19368)
     from your branch to Free Code Camp's `staging` branch.
 
 4.  The title (also called the subject) of your PR should be descriptive of your
@@ -290,8 +294,7 @@ why it was rejected and what changes are needed.
 
 Many Pull Requests, especially first Pull Requests, require correction or
 updating. If you have used the GitHub interface to create your PR, you will need
-to close your PR, create a new branch, and re-submit. This is because you cannot
-squash your commits via the GitHub interface.
+to close your PR, create a new branch, and re-submit.
 
 If you have a local copy of the repo, you can make the requested changes and
 amend your commit with: `git commit --amend` This will update your existing
@@ -303,22 +306,22 @@ Be sure to post in the PR conversation that you have made the requested changes.
 ### Other resources
 
 -   [Searching for Your Issue on
-    GitHub](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Search-Existing-Issues)
+    GitHub](http://forum.freecodecamp.com/t/searching-for-existing-issues/19139)
 
 -   [Creating a New GitHub
-    Issue](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Creating-a-New-GitHub-Issue)
+    Issue](http://forum.freecodecamp.com/t/creating-a-new-github-issue/18392)
 
 -   [Select Issues for Contributing Using
-    Labels](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/FreeCodeCamp-Issue-Labels)
+    Labels](http://forum.freecodecamp.com/t/free-code-camp-issue-labels/19556)
 
 -   [How to clone the FreeCodeCamp website on a Windows
-    pc](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/FreeCodeCamp-Fork-Windows)
+    pc](http://forum.freecodecamp.com/t/how-to-clone-and-setup-the-free-code-camp-website-on-a-windows-pc/19366)
 
 -   [How to log in to your local FCC site - using
-    GitHub](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/FreeCodeCamp-Log-In-To-Local-Instance)
+    GitHub](http://forum.freecodecamp.com/t/how-to-log-in-to-your-local-instance-of-free-code-camp/19552)
 
 -   [Writing great git commit
-    message](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Git-Commit-Message)
+    message](http://forum.freecodecamp.com/t/writing-good-git-commit-messages/13210)
 
 -   [Contributor Chat Support - For the FCC Repositories, and running a local
     instance](https://gitter.im/FreeCodeCamp/HelpContributors)
